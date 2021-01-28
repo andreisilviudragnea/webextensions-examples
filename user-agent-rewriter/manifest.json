@@ -10,7 +10,7 @@
   },
 
   "permissions": [
-    "webRequest", "webRequestBlocking", "https://httpbin.org/*" 
+    "webRequest", "webRequestBlocking", "<all_urls>"
   ],
   
   "background": {
@@ -21,6 +21,12 @@
     "default_icon": "icons/person-32.png",
     "default_title": "Choose a user agent",
     "default_popup": "popup/choose_ua.html"
+  }
+
+  "applications": {
+    "gecko": {
+      "id": "url-modify-headers@dragnea.com"
+    }
   }
 
 }
